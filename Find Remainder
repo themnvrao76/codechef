@@ -1,0 +1,7 @@
+test=int(input())
+mylist=[]
+for i in range(test):
+    x,y=map(int,input().split())
+    mylist.append(x%y)
+for i in mylist:
+    print(i)
