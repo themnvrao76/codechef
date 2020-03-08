@@ -1,0 +1,14 @@
+def pooja_money(widraw_money,total_money):
+    money=0
+    if(widraw_money%5==0 and widraw_money+0.50<total_money):
+        money=(total_money-widraw_money)-0.50
+        print(format(money,".2f"))
+    else:
+        print(format(total_money,".2f"))
+
+    
+    
+widraw_money,total_money=input().split()
+
+
+pooja_money(float(widraw_money),float(total_money))
