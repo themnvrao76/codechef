@@ -1,0 +1,13 @@
+test=int(input())
+mylist=[]
+for i in range(test):
+    x=int(input())
+    count=0
+    rem=0
+    while x>0:
+        rem=x%10
+        x=x//10
+        count=count+rem
+    mylist.append(count)
+for i in mylist:
+    print(i)
