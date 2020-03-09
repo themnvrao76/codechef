@@ -1,0 +1,19 @@
+test=int(input())
+sum1=0;sum2=0
+lead=0
+lead_in=0
+winner=0
+for i in range(test):
+    player_1,player_2=map(int,input().split())
+    sum1=sum1+player_1
+    sum2=sum2+player_2
+    lead_in=abs(sum1-sum2)
+    if(lead_in>lead):
+        lead=lead_in
+
+        if(player_1>player_2):
+            winner=1
+        else:
+            winner=2
+print(winner,lead)
+        
