@@ -1,0 +1,13 @@
+test=int(input())
+mylist=[]
+for i in range(test):
+    count=0;last=0
+    data=int(input())
+    while data>=1:
+        last=data%10
+        if(last==4):
+            count=count+1
+        data=data//10
+    mylist.append(count)
+for i in mylist:
+    print(i)
