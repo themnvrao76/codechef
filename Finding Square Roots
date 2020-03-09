@@ -1,0 +1,7 @@
+test=int(input())
+mylist=[]
+for i in range(test):
+    data=int(input())
+    mylist.append(int(data**0.5))
+for i in mylist:
+    print(i)
