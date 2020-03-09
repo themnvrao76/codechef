@@ -1,0 +1,9 @@
+test=int(input())
+mylist=[]
+x=0
+for i in range(test):
+    data=int(input())
+    x=(data//2)+1
+    mylist.append(x)
+for i in mylist:
+    print(i)
