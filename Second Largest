@@ -1,0 +1,22 @@
+test=int(input())
+mylist=[]
+for i in range(test):
+    x,y,z=[int(i) for i in input().split()]
+    if(x>y and x>z):
+        if(y>z):
+            
+            mylist.append(y)
+        else:
+            mylist.append(z)
+    elif(y>z and y>x):
+        if(z>x):
+            mylist.append(z)
+        else:
+            mylist.append(x)
+    elif(z>x and z>y):
+        if(x>y):
+            mylist.append(x)
+        else:
+            mylist.append(y)
+for i in mylist:
+    print(i)
