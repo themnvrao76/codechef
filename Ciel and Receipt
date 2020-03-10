@@ -1,0 +1,14 @@
+#Example of Greedy Algorithem
+test=int(input())
+ans=[]
+for i in range(test):
+    data=int(input())
+    price=[1,2,4,8,16,32,64,128,256,512,1024,2048]
+    mylist=[]
+    for index in range(len(price)-1,-1,-1):
+        while(data>=price[index]):
+            data=data-price[index]
+            mylist.append(price[index])
+    ans.append(len(mylist))
+for i in ans:
+    print(i)
