@@ -1,0 +1,11 @@
+test=int(input())
+mylist=[]
+for i in range(test):
+    data=int(input())
+    sum=1
+    while(data>=1):
+        sum=sum*data
+        data=data-1
+    mylist.append(sum)
+for i in mylist:
+    print(i)
