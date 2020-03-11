@@ -1,0 +1,13 @@
+test=int(input())
+ans=[]
+for i in range(test):
+    data=int(input())
+    money=[1,2,5,10,50,100]
+    mylist=[]
+    for i in range(len(money)-1,-1,-1):
+        while(data>=money[i]):
+            data=data-money[i]
+            mylist.append(money[i])
+    ans.append(len(mylist))
+for i in ans:
+    print(i)
