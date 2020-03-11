@@ -1,0 +1,11 @@
+test=int(input())
+mylist=[]
+for i in range(test):
+    a,b=map(int,input().split())
+    if(a>b):
+        mylist.append(a)
+    else:
+        mylist.append(b)
+    mylist.append(a+b)
+for i in mylist:
+    print(i,end=" ")
